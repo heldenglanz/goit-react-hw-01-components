@@ -1,11 +1,30 @@
+import PropTypes from "prop-types";
 
+const Statistics = ({title, stats})=>{
+    return ( 
+      
+    <section className="statistics">
+    {title && <h2 className="title">{title}</h2>}
+  <ul className="stat-list">{
+    stats.map(statItem =>
+    <li className="item" key={statItem.id}>
+       <span className="label">{statItem.label}</span>
+      <span className="percentage">{statItem.percentage}</span>
+    </li>
+        )}
+  </ul>
+</section>
+)}
 
-const  Statistics = ({label, percentage})=>{
-    return(
-        <>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}</span>
-      </>
-    )
+Statistics.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+    })).isRequired,
 }
-export default Statistics
+
+
+export default Statistics;

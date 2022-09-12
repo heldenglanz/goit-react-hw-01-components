@@ -10,13 +10,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 
 
-function add(a, b) {
-  return a + b
-}
-
-console.log(add(17, 24))
-
-
-
-console.log(add)
 

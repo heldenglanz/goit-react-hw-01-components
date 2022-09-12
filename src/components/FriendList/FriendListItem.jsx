@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 function FriendListItem({ avatar, name, isOnline }) {
+
   return (
     <>
       <span className={isOnline ? "green" : "red"}></span>

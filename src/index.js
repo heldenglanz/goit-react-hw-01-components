@@ -10,12 +10,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 
 
-function bittingme() {
-  console.log('bittingme')
+function add(a, b) {
+  return a + b
 }
 
-bittingme()
-// function qq(bittingme) {
-//   return
-// }
+console.log(add(17, 24))
+
+
+
+console.log(add)
 

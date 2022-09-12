@@ -8,4 +8,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>
 );
-// console.log('ggg')
+
+
+function bittingme() {
+  console.log('bittingme')
+}
+
+bittingme()
+// function qq(bittingme) {
+//   return
+// }
+

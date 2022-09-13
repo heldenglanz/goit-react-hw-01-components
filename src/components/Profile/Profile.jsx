@@ -6,7 +6,9 @@ const Profile = ({ username,
   location,
   avatar,
   stats }) => {
+
   return (
+
     <div className="profile">
       <div className="description">
         <img
